@@ -1,6 +1,6 @@
 .boxContainer div {
-    border: solid blue;
-    background-color: none;
+    border: solid;
+    background-color: black;
     border-color: red;
     margin: 0px;
     padding: 0px;
