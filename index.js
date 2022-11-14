@@ -1,18 +1,22 @@
 const boxContainer = document.querySelector(".boxContainer")
 
 
-let divColumn = document.createElement('div')
-
 const row = 16;
 const column = 16;
 
 for(let x = 0; x < row; x++) {
     let y = 0;
 
-    let divRow = document.createElement('div')
+    let divX = document.createElement('div')
 
-    divRow.setAttribute("id", `x${x}y${y}`)
-    boxContainer.appendChild(divRow)
+    divX.setAttribute("id", `x${x}y${y}`)
+    divX.textContet = 'hi'
+    boxContainer.appendChild(divX)
 
+    for(y = 0; y < column; y++) {
+        let divY = document.createElement('div')
 
+        divY.setAttribute('id', `x${x}y${y}`)
+        divX.appendChild(divY)
+    }
 }
