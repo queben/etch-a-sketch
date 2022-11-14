@@ -9,12 +9,14 @@ for(let x = 0; x < row; x++) {
 
     divX.setAttribute("id", `x${x}yN`)
     divX.textContet = 'hi'
+    //divX.style.cssText = "border: solid; background-color: white; border-color: black; margin: 0px; padding: 0px; width: 50px; height: 50px;"
     boxContainer.appendChild(divX)
 
     for(let y = 0; y < column; y++) {
         let divY = document.createElement('div')
 
         divY.setAttribute('id', `x${x}y${y}`)
+        divY.style.cssText = "border: solid; background-color: white; border-color: black; margin: 0px; padding: 0px; width: 50px; height: 50px;"
         divX.appendChild(divY)
     }
 }
